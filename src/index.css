@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass {
+    @apply bg-white/80 backdrop-blur-xl border border-white/50 shadow-sm dark:bg-slate-800/80 dark:border-slate-700;
+  }
+  .input-soft {
+    @apply w-full p-4 bg-gray-100 rounded-2xl outline-none transition-all focus:bg-white focus:ring-2 focus:ring-coral dark:bg-slate-700 dark:text-white dark:focus:ring-teal;
+  }
+  .btn-primary {
+    @apply bg-teal text-white shadow-lg hover:scale-[1.02] active:scale-95 transition-all;
+  }
+  .card-module {
+    @apply rounded-[30px] p-6 shadow-md transition-all active:scale-95 flex flex-col justify-between;
+  }
+}
+
+/* Scrollbar cachée */
+::-webkit-scrollbar { display: none; }
